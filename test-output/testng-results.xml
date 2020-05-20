@@ -1,57 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="83" started-at="2020-05-19T20:09:25 CDT" finished-at="2020-05-19T20:09:25 CDT">
+  <suite name="Default suite" duration-ms="7871" started-at="2020-05-20T13:40:05 CDT" finished-at="2020-05-20T13:40:13 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="83" started-at="2020-05-19T20:09:25 CDT" finished-at="2020-05-19T20:09:25 CDT">
-      <class name="com.syntax.class01.Task01">
-        <test-method status="PASS" signature="beforeClass1()[pri:0, instance:com.syntax.class01.Task01@1f28c152]" name="beforeClass1" is-config="true" duration-ms="10" started-at="2020-05-19T20:09:25 CDT" finished-at="2020-05-19T20:09:25 CDT">
+    <test name="Default test" duration-ms="7871" started-at="2020-05-20T13:40:05 CDT" finished-at="2020-05-20T13:40:13 CDT">
+      <class name="com.syntax.class01.HWTask02_PasswordCannotBeEmpty">
+        <test-method status="PASS" signature="openAndNavigate1()[pri:0, instance:com.syntax.class01.HWTask02_PasswordCannotBeEmpty@cd2dae5]" name="openAndNavigate1" is-config="true" duration-ms="7710" started-at="2020-05-20T13:40:05 CDT" finished-at="2020-05-20T13:40:12 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass1 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.syntax.class01.Task01@1f28c152]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-05-19T20:09:25 CDT" finished-at="2020-05-19T20:09:25 CDT">
+        </test-method> <!-- openAndNavigate1 -->
+        <test-method status="PASS" signature="passwordEmpty()[pri:0, instance:com.syntax.class01.HWTask02_PasswordCannotBeEmpty@cd2dae5]" name="passwordEmpty" duration-ms="92" started-at="2020-05-20T13:40:12 CDT" finished-at="2020-05-20T13:40:13 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.syntax.class01.Task01@1f28c152]" name="test1" duration-ms="7" started-at="2020-05-19T20:09:25 CDT" finished-at="2020-05-19T20:09:25 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.syntax.class01.Task01@1f28c152]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-05-19T20:09:25 CDT" finished-at="2020-05-19T20:09:25 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.syntax.class01.Task01@1f28c152]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-05-19T20:09:25 CDT" finished-at="2020-05-19T20:09:25 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:com.syntax.class01.Task01@1f28c152]" name="test2" duration-ms="3" started-at="2020-05-19T20:09:25 CDT" finished-at="2020-05-19T20:09:25 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.syntax.class01.Task01@1f28c152]" name="afterMethod" is-config="true" duration-ms="3" started-at="2020-05-19T20:09:25 CDT" finished-at="2020-05-19T20:09:25 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.syntax.class01.Task01@1f28c152]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-05-19T20:09:25 CDT" finished-at="2020-05-19T20:09:25 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:com.syntax.class01.Task01@1f28c152]" name="test3" duration-ms="4" started-at="2020-05-19T20:09:25 CDT" finished-at="2020-05-19T20:09:25 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.syntax.class01.Task01@1f28c152]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-19T20:09:25 CDT" finished-at="2020-05-19T20:09:25 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass1()[pri:0, instance:com.syntax.class01.Task01@1f28c152]" name="afterClass1" is-config="true" duration-ms="0" started-at="2020-05-19T20:09:25 CDT" finished-at="2020-05-19T20:09:25 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass1 -->
-      </class> <!-- com.syntax.class01.Task01 -->
+        </test-method> <!-- passwordEmpty -->
+      </class> <!-- com.syntax.class01.HWTask02_PasswordCannotBeEmpty -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
