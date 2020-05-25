@@ -1,21 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7871" started-at="2020-05-20T13:40:05 CDT" finished-at="2020-05-20T13:40:13 CDT">
+  <suite name="Suite" duration-ms="33942" started-at="2020-05-23T15:08:05 CDT" finished-at="2020-05-23T15:08:39 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7871" started-at="2020-05-20T13:40:05 CDT" finished-at="2020-05-20T13:40:13 CDT">
-      <class name="com.syntax.class01.HWTask02_PasswordCannotBeEmpty">
-        <test-method status="PASS" signature="openAndNavigate1()[pri:0, instance:com.syntax.class01.HWTask02_PasswordCannotBeEmpty@cd2dae5]" name="openAndNavigate1" is-config="true" duration-ms="7710" started-at="2020-05-20T13:40:05 CDT" finished-at="2020-05-20T13:40:12 CDT">
+    <test name="Test" duration-ms="33942" started-at="2020-05-23T15:08:05 CDT" finished-at="2020-05-23T15:08:39 CDT">
+      <class name="com.test.AddEmployeeTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.AddEmployeeTest@6321e813]" name="setUp" is-config="true" duration-ms="5649" started-at="2020-05-23T15:08:05 CDT" finished-at="2020-05-23T15:08:11 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openAndNavigate1 -->
-        <test-method status="PASS" signature="passwordEmpty()[pri:0, instance:com.syntax.class01.HWTask02_PasswordCannotBeEmpty@cd2dae5]" name="passwordEmpty" duration-ms="92" started-at="2020-05-20T13:40:12 CDT" finished-at="2020-05-20T13:40:13 CDT">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addEmployeePage()[pri:0, instance:com.test.AddEmployeeTest@6321e813]" name="addEmployeePage" duration-ms="13698" started-at="2020-05-23T15:08:11 CDT" finished-at="2020-05-23T15:08:24 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- passwordEmpty -->
-      </class> <!-- com.syntax.class01.HWTask02_PasswordCannotBeEmpty -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- addEmployeePage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.AddEmployeeTest@6321e813]" name="tearDown" is-config="true" duration-ms="703" started-at="2020-05-23T15:08:24 CDT" finished-at="2020-05-23T15:08:25 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.AddEmployeeTest -->
+      <class name="com.test.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.LoginTest@79be0360]" name="setUp" is-config="true" duration-ms="4375" started-at="2020-05-23T15:08:25 CDT" finished-at="2020-05-23T15:08:29 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="invalidPassword()[pri:0, instance:com.test.LoginTest@79be0360]" name="invalidPassword" duration-ms="1360" started-at="2020-05-23T15:08:29 CDT" finished-at="2020-05-23T15:08:31 CDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Hum@nhrm123] but found [[[ChromeDriver: chrome on WINDOWS (1de39ccf8022a086775dd27930575b6d)] -> id: spanMessage]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Hum@nhrm123] but found [[[ChromeDriver: chrome on WINDOWS (1de39ccf8022a086775dd27930575b6d)] -> id: spanMessage]]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:563)
+at com.test.LoginTest.invalidPassword(LoginTest.java:53)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.LoginTest@79be0360]" name="tearDown" is-config="true" duration-ms="697" started-at="2020-05-23T15:08:31 CDT" finished-at="2020-05-23T15:08:31 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.LoginTest@79be0360]" name="setUp" is-config="true" duration-ms="3665" started-at="2020-05-23T15:08:31 CDT" finished-at="2020-05-23T15:08:35 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validAdmonLogin()[pri:0, instance:com.test.LoginTest@79be0360]" name="validAdmonLogin" duration-ms="2916" started-at="2020-05-23T15:08:35 CDT" finished-at="2020-05-23T15:08:38 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validAdmonLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.LoginTest@79be0360]" name="tearDown" is-config="true" duration-ms="807" started-at="2020-05-23T15:08:38 CDT" finished-at="2020-05-23T15:08:39 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

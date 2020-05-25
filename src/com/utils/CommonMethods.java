@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.UnexpectedTagNameException;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CommonMethods extends BaseClass {
+public class CommonMethods extends PageInitializer {
 
 	/**
 	 * Method that clears and sends keys
@@ -254,6 +254,22 @@ public class CommonMethods extends BaseClass {
 			System.out.println(text + " is display. Test Case passed");
 		}else {
 			System.out.println(text + " is NOT display. Test Case failed");
+		}
+	}
+	
+	/**
+	 * this method will select a date from the calendar
+	 * @param element
+	 * @param text
+	 */
+	public static void selectCalendar(List<WebElement> element, String text) {
+		for (WebElement pickDate : element) {
+			if (pickDate.isEnabled()) {
+				if (pickDate.getText().equals(text)) {
+					pickDate.click();
+					break;
+				}
+			}
 		}
 	}
 }

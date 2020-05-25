@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.syntax.class01.HWTask01">
+      <class name="com.test.LoginTest">
         <methods>
-          <include name="openAndNavigate"/>
-          <include name="welcomeDisplayed"/>
-          <include name="quitBrowser"/>
+          <include name="validAdmonLogin"/>
+          <include name="tearDown"/>
+          <include name="invalidPassword"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.syntax.class01.HWTask01 -->
+      </class> <!-- com.test.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

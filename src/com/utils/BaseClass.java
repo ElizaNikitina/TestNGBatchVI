@@ -5,10 +5,12 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.*;
 public class BaseClass {
 
 	public static WebDriver driver;
 	
+	@BeforeMethod
 	public static WebDriver setUp() {
 		
 		ConfigsReader.readProperties(Constants.CONFIGURATION_FILEPATH);
@@ -32,9 +34,12 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
 		
 		driver.get(ConfigsReader.getProperty("url"));
+		
+		PageInitializer.initialize();
 		return driver;
 	}
 	
+	@AfterMethod
 	public static void tearDown() {
 		if(driver!=null) {
 			driver.quit();
