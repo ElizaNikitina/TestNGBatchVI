@@ -22,16 +22,16 @@ public class HWHRMSAddEmployee extends CommonMethods{
  * 8. Verify Employee has been added successfully
  * 9. Close the browser
  */
-	
-	@BeforeMethod
-	public void openAndNavigate() {
-		setUp();
-	}
-	
-	@AfterMethod
-	public void quitBrowser() {
-		tearDown();
-	}
+//	
+//	@BeforeMethod
+//	public void openAndNavigate() {
+//		setUp();
+//	}
+//	
+//	@AfterMethod
+//	public void quitBrowser() {
+//		tearDown();
+//	}
 	
 	@Test
 	public void loginValid() {

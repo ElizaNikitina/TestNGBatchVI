@@ -1,5 +1,6 @@
 package com.syntax.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -21,6 +22,7 @@ public class LoginPageElements extends CommonMethods{
 
 		@FindBy(css = "input#btnLogin")
 		public WebElement loginBtn;
+		
 
 		@FindBy(xpath = "//div[@id='divLogo']/img")
 		public WebElement logo;
@@ -47,6 +49,15 @@ public class LoginPageElements extends CommonMethods{
 		@FindBy(id = "btnSave")
 		public WebElement btnSave;
 		
+		@FindBy(id = "user_name")
+		public WebElement user_name;
+		
+		@FindBy(id = "user_password")
+		public WebElement user_password;
+		
+		@FindBy(id = "re_password")
+		public WebElement re_password;
+		
 		public LoginPageElements() {
 			PageFactory.initElements(BaseClass.driver, this);
 			
@@ -72,4 +83,40 @@ public class LoginPageElements extends CommonMethods{
 			sendText(password, pwd);
 			click(loginBtn);
 		}
+		
+		public void createLoginDetails(String usName, String paswd ) {
+			sendText(user_name, usName);
+			sendText(user_password, paswd);
+			sendText(re_password, paswd);
+			
+		}
+		
+		public void fullName(String name, String lastName) {
+			driver.findElement(By.id("firstName")).sendKeys(name);
+			driver.findElement(By.id("lastName")).sendKeys(lastName);
+		}
+		
+		public void clickSave() {
+			click(btnSave);
+		}
+
+		public String getText() {
+		WebElement text = driver.findElement(By.xpath("//span[text()='Required']"));
+		String expectedText = text.getText();	
+			return expectedText;
+		}
+		
+		public void createNewEmp(String name, String lastname, String usName, String paswd) {
+			sendText(firstName,name);
+			sendText(lastName,lastname);
+		
+			WebElement radioB = driver.findElement(By.id("chkLogin"));
+			radioB.click();
+			sendText(user_name, usName);
+			sendText(user_password, paswd);
+			sendText(re_password, paswd);
+			
+		}
+
+		
 }

@@ -8,15 +8,16 @@ import com.utils.CommonMethods;
 
 public class AssertionDemo extends CommonMethods{
 
-	@BeforeMethod
-	public void openAndNavigate1(){
-		setUp();
-	}
+//	@BeforeMethod
+//	public void openAndNavigate1(){
+//		setUp();
+//	}
+//	
 	
-	@AfterMethod
-	public void quitBrowser() {
-		tearDown();
-	}
+//	@AfterMethod
+//	public void quitBrowser() {
+//		tearDown();
+//	}
 	
 	@Test
 	public void titleValidation() {

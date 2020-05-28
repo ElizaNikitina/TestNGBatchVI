@@ -3,13 +3,25 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.test.LoginTest">
+      <class name="com.syntax.class01.HW_TeacherMethod">
         <methods>
+          <include name="invalidLogin"/>
           <include name="tearDown"/>
-          <include name="invalidPassword"/>
           <include name="setUp"/>
+          <include name="validLogin"/>
+          <include name="openBrowserAndNavigate"/>
+          <include name="quitBrowser"/>
         </methods>
-      </class> <!-- com.test.LoginTest -->
+      </class> <!-- com.syntax.class01.HW_TeacherMethod -->
+      <class name="com.syntax.class01.HWTask02_PasswordCannotBeEmpty">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="passwordEmpty"/>
+          <include name="openAndNavigate1"/>
+        </methods>
+      </class> <!-- com.syntax.class01.HWTask02_PasswordCannotBeEmpty -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

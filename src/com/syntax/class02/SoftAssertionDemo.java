@@ -14,15 +14,15 @@ import com.utils.CommonMethods;
 import com.utils.ConfigsReader;
 
 public class SoftAssertionDemo extends CommonMethods{
-	@BeforeMethod
-	public void openBrowserAndNavigate() {
-		setUp();
-	}
-
-	@AfterMethod
-	public void quitBrowser() {
-		tearDown();
-	}
+//	@BeforeMethod
+//	public void openBrowserAndNavigate() {
+//		setUp();
+//	}
+//
+//	@AfterMethod
+//	public void quitBrowser() {
+//		tearDown();
+//	}
 
 	@Test
 	public void logoAndWelcomeValidation() {

@@ -17,6 +17,21 @@ public class PersonalDetailsPageElements {
 	public List<WebElement> genderRadioGroup;
 	
 	
+	@FindBy(xpath ="//div[@id='pdMainContainer']/div[1]/h1" )
+	public WebElement lblPersonalDetails;
+	
+	
+	
+	@FindBy(id = "personal_cmbNation")
+	public WebElement nationalityDD;
+
+
+
+
+
+	@FindBy(id = "personal_txtEmployeeId")
+	public WebElement employeeId;
+	
 	public PersonalDetailsPageElements() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}	

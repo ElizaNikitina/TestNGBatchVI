@@ -40,7 +40,20 @@ public class DashBoardPageElements extends CommonMethods{
 		@FindBy(id = "menu_pim_addEmployee")
 		public WebElement pimAddEmp;
 	
+
+
+		@FindBy(xpath = "//a[@id='menu_pim_addEmployee']")
+		public WebElement addEmp;
 		
+		@FindBy(xpath = "//a[@id='menu_pim_viewPimModule']")
+		public WebElement PIM;
+
+		
+		
+		public void navigateToAddEmployee() {
+			jsClick(PIM);
+			jsClick(addEmp);
+		}
 	
 		
 		@FindBy(xpath = "//*[@id=\"photofile\"]")
@@ -50,6 +63,7 @@ public class DashBoardPageElements extends CommonMethods{
 		@FindBy(id = "btnSave")
 		public WebElement btnSave;
 		
+		//pim 
 		public void addEmp() {
 			jsClick(pim);
 			jsClick(pimAddEmp);
