@@ -2,26 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.syntax.class01.HW_TeacherMethod">
+      <class name="com.syntax.Review01.SauseDemoLogin">
         <methods>
-          <include name="invalidLogin"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="validLogin"/>
-          <include name="openBrowserAndNavigate"/>
-          <include name="quitBrowser"/>
+          <include name="login" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- com.syntax.class01.HW_TeacherMethod -->
-      <class name="com.syntax.class01.HWTask02_PasswordCannotBeEmpty">
-        <methods>
-          <include name="quitBrowser"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="passwordEmpty"/>
-          <include name="openAndNavigate1"/>
-        </methods>
-      </class> <!-- com.syntax.class01.HWTask02_PasswordCannotBeEmpty -->
+      </class> <!-- com.syntax.Review01.SauseDemoLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

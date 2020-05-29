@@ -10,7 +10,7 @@ public class BaseClass {
 
 	public static WebDriver driver;
 	
-	@BeforeMethod
+	@BeforeMethod( alwaysRun=true)
 	public static WebDriver setUp() {
 		
 		ConfigsReader.readProperties(Constants.CONFIGURATION_FILEPATH);
@@ -39,7 +39,7 @@ public class BaseClass {
 		return driver;
 	}
 	
-	@AfterMethod
+	@AfterMethod( alwaysRun=true)
 	public static void tearDown() {
 		if(driver!=null) {
 			driver.quit();

@@ -21,7 +21,7 @@ public class DataProviderDemo extends CommonMethods {
 
 	// This method that has a @DataProvider annotation
 	// should return a 2D-Array
-	@DataProvider
+	@DataProvider(name = "userData")
 	public Object[][] getData() {
 
 		// This is like doing the following three steps

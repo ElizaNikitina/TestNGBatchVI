@@ -7,6 +7,7 @@ import org.testng.annotations.*;
 
 import com.utils.CommonMethods;
 import com.utils.ConfigsReader;
+import com.utils.ExcelUtility;
 
 public class HWTask01 extends CommonMethods{
 	/*
@@ -23,14 +24,11 @@ public class HWTask01 extends CommonMethods{
 	 *  7.Close the browser
 	 */
 
-	@Test(dataProvider = "getData")
+	@Test(dataProvider = "userDataFromExcel")
 	public void create5NewEmp( String name, String lastname, String userName, String paswd ) {
 		login.login(ConfigsReader.getProperty("username"), ConfigsReader.getProperty("password"));
 		dashboard.addEmp();
 		wait(7);
-		
-//		String actualId = pdetails.actualEmpId.getAttribute("value");
-//		Assert.assertEquals(actualId, expected);
 		
 		String expectedEmpId = addEmp.employeeId.getAttribute("value");
 		
@@ -57,17 +55,16 @@ public class HWTask01 extends CommonMethods{
 		
 		Object[][] data = { 
 				{ "Lena", "Antonova", "Lena_Antonova", "Password!234"  } ,
-//				{ "Katya", "Antonova1!", "Katya_Antonova", "Password!234" },
-//				{ "Olga", "Antonova2!", "Lena_Antonova", "Password!234"  } ,
-//				{ "Yula", "Antonova3" , "Yula_Antonova", "Password!234" } ,
-//				{ "eliza", "Antonova4!", "eliza_Antonova", "Password!234" },
+				{ "Katya", "Antonova1!", "Katya_Antonova", "Password!234" },
+				{ "Olga", "Antonova2!", "Lena_Antonova", "Password!234"  } ,
+				{ "Yula", "Antonova3" , "Yula_Antonova", "Password!234" } ,
+				{ "eliza", "Antonova4!", "eliza_Antonova", "Password!234" },
 		};
 		return data;
 	}
 	
 	@DataProvider(name = "userDataFromExcel")
-	public Object [][] getData2(){
-		return null;
-		
+	public Object[][] getData2() {
+		return ExcelUtility.excelIntoArray(System.getProperty("user.dir") + "/testdata/Excel.xlsx", "Employee");
 	}
 }
